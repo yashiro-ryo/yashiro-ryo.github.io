@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/index.css">
+  <title>Yashiro's Blog</title>
+</head>
+
+<body>
+  <div class="navbar fixed-top">
+    <a href="#" id="profile-btn" class="link-secondary">Profile</a>
+    <a href="#" id="product-btn" class="link-secondary">Product</a>
+    <a href="#" id="works-btn" class="link-secondary">Works</a>
+    <a href="#" id="hobby-btn" class="link-secondary">Hobby</a>
+  </div>
+  <div class="blog-title">
+    <p class="title">Yashiro's Blog</p>
+    <p>Protfolio Site</p>
+  </div>
+  <div id="profile" class="profile contents">
+    <div class="text-container">
+      <div class="title">
+        <p>Profile</p>
+      </div>
+      <div class="contents-body">
+        <div class="my-icon">
+          <img id="my-icon" src="image-icon/prof.JPG" width="200px" height="200px" />
+        </div>
+        <div class="profile-text">
+          <p class="label">Name</p>
+          <p>矢代　涼 (やしろ　りょう)</p>
+          <p class="label">BirthDay</p>
+          <p>2000/09/15</p>
+          <p class="label">From</p>
+          <p>徳島</p>
+          <p class="label">School</p>
+          <p>徳島市立徳島市立高->徳島大学(学部3年)</p>
+          <p class="label">Skill</p>
+          <p>TypeScript, React.js, Vue.js, Express.js, MySQL</p>
+          <p class="label">Hobby</p>
+          <p>Travel, Create Something</p>
+          <p class="label">Links</p>
+          <div class="link-conatiner">
+            <a href="https://github.com/yashiro-ryo"><img src="./image-icon/GitHub-Mark-64px.png" alt="my github link"
+                width="20px" height="20px" /></a>
+            <a href="https://twitter.com/yyashiro2"><img src="./image-icon/Logo blue.svg" alt="my twitter link"
+                width="20px" height="20px" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="product" class="product contents">
+    <div class="text-container">
+      <div class="title">
+        <p>Product</p>
+      </div>
+      <div class="contents-body">
+        <p>Coming Soon...</p>
+      </div>
+    </div>
+  </div>
+  <div id="works" class="works contents">
+    <div class="text-container">
+      <div class="title">
+        <p>Works</p>
+      </div>
+      <div class="contents-body">
+        <p>Coming Soon...</p>
+      </div>
+    </div>
+  </div>
+  <div id="hobby" class="hobby contents">
+    <div class="text-container">
+      <div class="title">
+        <p>Hobby</p>
+      </div>
+      <div class="contents-body">
+        <p>Coming Soon...</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>CopyRights By Yashiro Ryo 2022</p>
+  </div>
+  <script src="./javascript/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script>
+    $(function ($) {
+      $('#profile-btn').on('click', function () {
+        const profileTop = $('#profile').offset().top;
+        $("html").animate({ scrollTop: profileTop });
+      });
+      $('#product-btn').on('click', function () {
+        const productTop = $('#product').offset().top;
+        $("html").animate({ scrollTop: productTop });
+      });
+      $('#works-btn').on('click', function () {
+        const worksTop = $('#works').offset().top;
+        $("html").animate({ scrollTop: worksTop });
+      });
+      $('#hobby-btn').on('click', function () {
+        const hobbyTop = $('#hobby').offset().top;
+        $("html").animate({ scrollTop: hobbyTop });
+      });
+    });
+  </script>
+</body>
+
+</html>
